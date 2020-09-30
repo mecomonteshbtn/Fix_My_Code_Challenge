@@ -15,10 +15,11 @@ class Square():
     __width = 0
     __height = 0
 
-    def __init__(self, width, height):
+    def __init__(self, width=0, height=0):
         """Constructor for the class Square"""
-        self.__width = width
-        self.__height = height
+        if width == height:
+            self.__width = width
+            self.__height = height
 
     @property
     def width(self):
