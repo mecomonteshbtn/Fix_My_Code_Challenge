@@ -1,6 +1,9 @@
 #!/usr/bin/python3
+# -*- coding: utf-8 -*-
 """
-Author: Robinson Montes
+Created on Tue Sep 29 19:32:49 2020
+
+@author: Robinson Montes
 """
 
 
@@ -12,7 +15,7 @@ class Square():
     __height = 0
 
     def __init__(self, width, height):
-        """init method for square class
+        """Init method for square class
         """
         self.__width = width
         self.__height = height
@@ -57,7 +60,7 @@ class Square():
         return self.__height * self.__width
 
     def perimiter_of_my_square(self):
-        """Method to calculate and return the perimeter of the square
+        """Calculate and return the perimeter of the square
         """
         return (self.__width * 2) + (self.__height * 2)
 
