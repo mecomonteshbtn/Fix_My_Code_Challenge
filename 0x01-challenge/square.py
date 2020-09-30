@@ -9,16 +9,19 @@ Created on Tue Sep 29 19:32:49 2020
 
 class Square():
     """Square class for task
+
+    Returns:
+        Nothing.
     """
 
-    __width = 0
-    __height = 0
+    width = 0
+    height = 0
 
     def __init__(self, width, height):
         """Init method for square class
         """
-        self.__width = width
-        self.__height = height
+        self.width = width
+        self.height = height
 
     @property
     def width(self):
@@ -35,7 +38,7 @@ class Square():
         elif value <= 0:
             raise ValueError("width must be > 0")
         else:
-            self.__width = value
+            self.width = value
 
     @property
     def height(self):
@@ -57,17 +60,17 @@ class Square():
     def area_of_my_square(self):
         """Area of the square
         """
-        return self.__height * self.__width
+        return self.height * self.width
 
     def perimiter_of_my_square(self):
         """Calculate and return the perimeter of the square
         """
-        return (self.__width * 2) + (self.__height * 2)
+        return (self.width * 2) + (self.height * 2)
 
     def __str__(self):
         """String representation for square
         """
-        return "{}/{}".format(self.__width, self.__height)
+        return "{}/{}".format(self.width, self.height)
 
 
 if __name__ == "__main__":
