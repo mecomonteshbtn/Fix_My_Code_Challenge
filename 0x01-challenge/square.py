@@ -2,7 +2,6 @@
 # -*- coding: utf-8 -*-
 """
 Created on Tue Sep 29 19:32:49 2020
-
 @author: Robinson Montes
 """
 
@@ -13,13 +12,13 @@ class Square():
         Nothing.
     """
 
-    width = 0
-    height = 0
+    __width = 0
+    __height = 0
 
     def __init__(self, width, height):
         """Constructor for the class Square"""
-        self.width = width
-        self.height = height
+        self.__width = width
+        self.__height = height
 
     @property
     def width(self):
@@ -53,15 +52,15 @@ class Square():
 
     def area_of_my_square(self):
         """Area of the square"""
-        return self.width * self.height
+        return self.__width * self.__height
 
     def perimeter_of_my_square(self):
         """Perimeter of the square"""
-        return (self.width * 2) + (self.height * 2)
+        return (self.__width * 2) + (self.__height * 2)
 
     def __str__(self):
         """String representation of the class square"""
-        return "{}/{}".format(self.width, self.height)
+        return "{}/{}".format(self.__width, self.__height)
 
 
 if __name__ == "__main__":
