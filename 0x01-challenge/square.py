@@ -7,8 +7,9 @@ Author: Robinson Montes
 class Square():
     """Square class for task
     """
-    width = 0
-    height = 0
+
+    __width = 0
+    __height = 0
 
     def __init__(self, width, height):
         """init method for square class
